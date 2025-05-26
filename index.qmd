@@ -1,0 +1,215 @@
+---
+title: "Authentic Data Science Assessments in a Computer-Based Testing Environment"
+format: 
+  revealjs:
+    embed-resources: true
+editor: visual
+theme: [solarized, themer.scss]
+author:
+  - name: Katie Burak
+    affiliation: University of British Columbia
+---
+
+## Collaborators
+
+::: {style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem;"}
+::: {style="flex: 1;"}
+<img src="https://katieburak.github.io/profile.png" alt="Katie Burak" width="200px" style="border-radius: 50%;"/>
+
+**Katie Burak**\
+Assistant Professor of Teaching\
+Department of Statistics, UBC
+:::
+
+::: {style="flex: 1;"}
+<img src="https://ubc-mds.github.io/img/team/heddy.jpg" alt="Hedayat Zarkoob" width="200px" style="border-radius: 50%;"/>
+
+**Hedayat Zarkoob**\
+Postdoctoral Research and Teaching Fellow\
+Department of Computer Science, UBC
+:::
+
+::: {style="flex: 1;"}
+<img src="https://firas.moosvi.com/authors/firasm/avatar_hueef51d4e68b574928723628724ef3fe4_1513362_270x270_fill_q75_lanczos_center.jpg" alt="Firas Moosvi" width="200px" style="border-radius: 50%;"/>
+
+**Firas Moosvi**\
+Lecturer\
+Department of Computer Science, UBC
+:::
+:::
+
+## MDS Academic team
+
+We would also like to acknowledge the academic team of UBC’s MDS program for their contributions to the courses that informed this project:
+
+::: columns
+::: {.column width="50%"}
+-   Varada Kolhatkar\
+-   Tiffany Timbers
+-   Prajeet Bajpai\
+-   Daniel Chen\
+-   Gittu George\
+:::
+
+::: {.column width="50%"}
+-   Payman Nickchi\
+-   Joel Östblom\
+-   Alexi Rodríguez-Arelis\
+-   Andy Tai\
+:::
+:::
+
+## Motivation
+
+<br></br>
+
+Have you ever tried to assess a coding-based learning objective in an LMS platform like Canvas or Blackboard? <br></br>
+
+![](img/canvas_question.png)
+
+## Limitations of Traditional Platforms
+
+::: incremental
+-   Lack of an IDE (e.g., RStudio, Jupyter Notebooks) forces students to code in unfamiliar environments
+
+-   Inauthentic assessment of student skills
+
+-   Inability to use testing frameworks
+
+-   No immediate feedback for students
+
+-   We need a way for students to use computing environments they're comfortable with, while maintaining exam integrity...
+:::
+
+## Computer-Based Testing Facility
+
+-   UBC's Computer-Based Testing Facility (CBTF) is platform agnostic and helps instructors run digital assessments at scale
+
+![](https://cbtf.ubc.ca/images/room014_2.jpg)
+
+::: {style="font-size: 0.6em; text-align: center; color: gray;"}
+Source: <a href="https://cbtf.ubc.ca/images/room014_2.jpg" target="_blank">https://cbtf.ubc.ca/</a>
+:::
+
+
+## Why a Computer-Based Testing Environment?
+
+-   The demand for applied statistics and data science education is growing and so is the need for effective assessment tools.
+-   Authentic assessments should mirror real-world applications.
+-   Providing access to proper coding environments and IDEs helps bridge the gap between academic assessments and real-world tools.
+-   Helps address concerns about the irresponsible use of GenAI by students.
+-   Promotes equity and inclusion by standardizing the computing environment, ensuring assessments measure understanding rather than access to personal hardware or resources.
+
+## PrairieLearn
+
+-   Developed at the University of Illinois, PrairieLearn supports dynamic question banks with randomized variants (West, Herman & Zilles, 2015).
+
+-   Enables the creation of realistic, code-based assessments.
+
+-   Supports automated feedback for students.
+
+-   Automatically evaluate coding functionality through test functions.
+
+-   Promotes efficiency in exam creation by allowing for question banks that evolve and expand over time.
+
+![](img/PL.png)
+
+## Asynchronous Assessment
+
+Randomized asynchronous assessments provide several key benefits, including:
+
+::: incremental
+-   Increased flexibility for students
+-   Scalable question banks that can be expanded and refined over time
+-   Reduced instructional workload by eliminating the need to create new exams each year
+-   Reduced time allocated to manually grading questions
+:::
+
+## Master of Data Science Program
+
+-   We implemented asynchronous computer-based assessments in UBC's Master of Data Science (MDS) program this year.
+-   Leveraging data from the MDS program, our objectives are to explore the impact of asynchronous assessments facilitated by PrairieLearn on student learning and performance.
+
+![](https://ubc-mds.github.io/img/mdslogopad.png)
+
+## MDS Program Overview
+
+-   MDS is structured as an intense 10-month cohort-based program.
+-   Attracts a diverse cohort from various academic backgrounds.
+-   Two semesters are divided into six "blocks" each consisting of four month-long courses covering topics in statistics, machine learning, computing and data science.
+-   The program wraps up with a 2-month industry capstone project.
+-   Data tracks students across multiple courses over time.
+
+```{mermaid}
+flowchart LR
+    A[Block 1] --> B[Block 2]
+    B --> C[Block 3]
+    C --> D[Block 4]
+    D --> E[Block 5]
+    E --> F[Block 6]
+    F --> G{Capstone}
+```
+
+## Canvas --\> PrairieLearn
+
+<br></br>
+
+-   Mapped existing exam questions to course learning objectives for clear organization and efficient assessment design.
+
+-   Incorporated randomization in questions:
+
+    -   Variable parameters for dynamic question content.
+    -   Created multiple variants maintaining consistent difficulty levels.
+
+-   Let's take a look at a simple sample question!
+
+------------------------------------------------------------------------
+
+::: {style="text-align: center; margin: 0; padding: 0;"}
+<img src="pl.gif" style="width: 55%; margin: 0; padding: 0;"/>
+:::
+
+## The Data
+
+-   Deidentified data of 150 students from the first two blocks of MDS.
+
+-   2 PrairieLearn quizzes per course taken in a 5-day quiz window.
+
+-   8 courses over a 2-month span:
+
+    -   Programming for Data Science
+    -   Computing Platforms for Data Science
+    -   Data Wrangling
+    -   Descriptive Statistics and Probability for Data Science
+    -   Algorithms and Data Structures
+    -   Data Visualization I
+    -   Statistical Inference and Computation I
+    -   Supervised Learning I
+
+## Results
+
+![](img/quiz_score_distribution.png)
+
+## Results
+
+![](img/quiz_score_time.png)
+
+## Discussion
+
+-   We found that performance was overall better for students who wrote their exams earlier in the quiz window.
+
+-   Quiz performance remains fairly consistent over time, possibly suggesting that students are not attempting to “game” the system.
+
+-   These results are in line with a study conducted at the University of Illinois using the PrairieLearn system titled *"How Much Randomization is Needed to Deter Collaborative Cheating on Asynchronous Exams?"*
+
+-   Folks found that using randomized sets of three or four problems with varying parameters is an effective way to reduce collaborative cheating.
+
+-   Over time, we aim to expand our question banks and introduce more layers of randomization.
+
+> <small>Chen, B., West, M., & Zilles, C. (2018, June). How much randomization is needed to deter collaborative cheating on asynchronous exams?. In Proceedings of the fifth annual ACM conference on learning at scale (pp. 1-10).</small>
+
+## 
+
+::: {style="text-align: center; font-size: 120px; margin-top: 30vh;"}
+Thank you! Questions?
+:::

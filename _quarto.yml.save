@@ -1,0 +1,17 @@
+project:
+  type: website
+
+website:
+  title: "My Slides"
+  navbar: false  # hide the top nav (optional)
+
+format:
+  html:
+    theme: default
+Authentic Data Science Assessments in a Computer-Based Testing Environment
+y
+
+^^^^^^^^X
+^x
+^X
+
