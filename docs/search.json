@@ -81,7 +81,7 @@
     "href": "index.html#the-data",
     "title": "Authentic Data Science Assessments in a Computer-Based Testing Environment",
     "section": "The Data",
-    "text": "The Data\n\nDeidentified data of 150 students from the first two blocks of MDS.\n2 PrairieLearn quizzes per course taken in a 5-day quiz window.\n8 courses over a 2-month span:\n\nProgramming for Data Science\nComputing Platforms for Data Science\nData Wrangling\nDescriptive Statistics and Probability for Data Science\nAlgorithms and Data Structures\nData Visualization I\nStatistical Inference and Computation I\nSupervised Learning I"
+    "text": "The Data\n\nDeidentified data of 150 students from the first two blocks of MDS.\n2 PrairieLearn quizzes per course taken in a 5-day quiz window.\nLooked at 6 courses over a 2-month span:\n\nProgramming for Data Science\nData Wrangling\nDescriptive Statistics and Probability for Data Science\nAlgorithms and Data Structures\nStatistical Inference and Computation I\nSupervised Learning I"
   },
   {
     "objectID": "index.html#results",

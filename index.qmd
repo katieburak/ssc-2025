@@ -91,7 +91,6 @@ Have you ever tried to assess a coding-based learning objective in an LMS platfo
 Source: <a href="https://cbtf.ubc.ca/images/room014_2.jpg" target="_blank">https://cbtf.ubc.ca/</a>
 :::
 
-
 ## Why a Computer-Based Testing Environment?
 
 -   The demand for applied statistics and data science education is growing and so is the need for effective assessment tools.
@@ -175,14 +174,12 @@ flowchart LR
 
 -   2 PrairieLearn quizzes per course taken in a 5-day quiz window.
 
--   8 courses over a 2-month span:
+-   Looked at 6 courses over a 2-month span:
 
     -   Programming for Data Science
-    -   Computing Platforms for Data Science
     -   Data Wrangling
     -   Descriptive Statistics and Probability for Data Science
     -   Algorithms and Data Structures
-    -   Data Visualization I
     -   Statistical Inference and Computation I
     -   Supervised Learning I
 
